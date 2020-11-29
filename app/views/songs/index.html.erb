@@ -1,0 +1,17 @@
+<tbody>
+    <tr>
+    Songs Index
+    </tr>
+</tbody>
+
+<tbody>
+    <tr>
+    <% @songs.each do |song| %>
+        <%= song.title %><br>
+        <%= song.release_year %><br>
+        <%= song.released %><br>
+        <%= song.artist_name %><br>
+        <%= song.genre %><br>
+    <% end %>
+    </tr>
+</tbody>
